@@ -2,6 +2,21 @@
 
 Voice-first, multilingual legal navigator for India.
 
+## Project overview
+
+Nyaay Sathi is built to solve a simple but critical gap: many people face legal problems, but do not know where to start, which office to approach, what documents to collect, or how to explain their case clearly.
+
+The idea is **not** to replace lawyers or courts. The idea is to provide a calm, multilingual, first-step legal companion that turns confusion into an actionable path:
+
+- Explain legal issues in plain language (instead of heavy legal jargon)
+- Ask smart follow-up questions to understand missing facts
+- Suggest likely forums (labour office, consumer forum, DLSA, police station, etc.)
+- List useful documents to prepare
+- Generate a complaint draft PDF that users can take forward
+- Detect crisis situations and prioritize immediate safety guidance
+
+In short, Nyaay Sathi helps people move from **\"I don't know what to do\"** to **\"I know my next step\"**, especially for common everyday issues like wages, tenancy, consumer fraud, women's protection, and FIR-related problems.
+
 This repository currently contains the first backend slice:
 
 - Employment category seed data ingest pipeline
