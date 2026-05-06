@@ -1,0 +1,97 @@
+[
+  {
+    "title": "Bharatiya Nagarik Suraksha Sanhita, 2023",
+    "section": "Section 173",
+    "snippet": "Information about a cognizable offence must be recorded by the officer in charge; oral information is reduced to writing, read over, and signed; a copy is given free to the informant."
+  },
+  {
+    "title": "Bharatiya Nagarik Suraksha Sanhita, 2023",
+    "section": "Section 173 (electronic information)",
+    "snippet": "Information may be given electronically; the officer may take action on it and the person may be required to sign within three days, supporting remote and urgent reporting."
+  },
+  {
+    "title": "Bharatiya Nagarik Suraksha Sanhita, 2023",
+    "section": "Section 175",
+    "snippet": "Police officers have powers to investigate cognizable cases; where investigation is refused or stalled, hierarchical remedies including approach to Superintendent of Police and Magistrate may apply as per the Act."
+  },
+  {
+    "title": "Bharatiya Nagarik Suraksha Sanhita, 2023",
+    "section": "Zero / territorial FIR",
+    "snippet": "Any police station can register information about a cognizable offence irrespective of territorial jurisdiction and transfer it to the competent station, enabling zero FIR for urgent cases."
+  },
+  {
+    "title": "Bharatiya Nagarik Suraksha Sanhita, 2023",
+    "section": "Section 210 (Magistrate powers)",
+    "snippet": "Judicial Magistrates may take cognizance and order investigation in accordance with the Sanhita when legally moved; useful when police do not register or investigate."
+  },
+  {
+    "title": "Bharatiya Sakshya Adhiniyam, 2023",
+    "section": "Electronic records",
+    "snippet": "Evidence rules recognise electronic and digital records; preserving screenshots, call logs, and hashes helps investigation and trial."
+  },
+  {
+    "title": "Scheduled Castes and Scheduled Tribes (Prevention of Atrocities) Act, 1989",
+    "section": "Sections 15A, 18, 23",
+    "snippet": "FIR in atrocity cases should be registered promptly; wrongful neglect by public servants is punishable; anticipatory bail is barred for several offences under the Act."
+  },
+  {
+    "title": "Protection of Children from Sexual Offences Act, 2012",
+    "section": "Mandatory reporting",
+    "snippet": "Offences against children must be reported; police and Special Juvenile Police Unit handle investigation with child-friendly procedures and confidentiality."
+  },
+  {
+    "title": "Indian Penal Code, 1860",
+    "section": "Cognizable offences",
+    "snippet": "Many serious offences are cognizable where police can arrest without warrant and must register FIR on information; schedule in BNSS and IPC determines powers."
+  },
+  {
+    "title": "National Human Rights Commission guidelines",
+    "section": "Custodial complaints",
+    "snippet": "Complaints of death or torture in custody can be lodged with NHRC and State Human Rights Commissions in addition to FIR and Magistrate inquest where applicable."
+  },
+  {
+    "entry_type": "illustrative_case",
+    "title": "Anonymized FIR registration · Pune district",
+    "section": "Illustrative outcome: FIR registered after SP office letter",
+    "snippet": "Anonymized legal-literacy notes from Pune district: after a station diary entry but no FIR for a cognizable theft, the complainant submitted a written complaint to the Superintendent of Police with itemised bills and CCTV stills; an FIR was registered and investigation assigned. Paths differ by facts; not a reported judgment.",
+    "district": "Pune",
+    "state": "Maharashtra",
+    "outcome": "won",
+    "forum_visited": "Police station plus Superintendent of Police office",
+    "documents_used": [
+      "Written complaint with timeline",
+      "Proof of ownership of stolen items",
+      "CCTV stills or witness numbers",
+      "Copy of station diary entry request"
+    ]
+  },
+  {
+    "entry_type": "illustrative_case",
+    "title": "Anonymized FIR attempt · Pune district",
+    "section": "Illustrative outcome: preliminary inquiry, delayed registration",
+    "snippet": "Anonymized pattern from Pune district: police treated a cognizable financial dispute as civil, conducted a long preliminary inquiry without clear diary copies to the complainant, and registration dragged until a lawyer helped file a Magistrate application. Illustrative frustration story—verify locally with DLSA.",
+    "district": "Pune",
+    "state": "Maharashtra",
+    "outcome": "lost",
+    "forum_visited": "Police station (initial) / later Magistrate application (pattern note)",
+    "documents_used": [
+      "Informal loan slips",
+      "WhatsApp voice notes only"
+    ]
+  },
+  {
+    "entry_type": "illustrative_case",
+    "title": "Anonymized zero FIR · Kolkata district",
+    "section": "Illustrative outcome: zero FIR transferred and investigated",
+    "snippet": "Anonymized training example from Kolkata: a woman reported a mobile snatching while travelling; a zero FIR was taken at a station en route and transferred to the competent PS with injury papers. Timelines vary. Educational pattern only.",
+    "district": "Kolkata",
+    "state": "West Bengal",
+    "outcome": "won",
+    "forum_visited": "Police station (zero FIR) → jurisdictional police station",
+    "documents_used": [
+      "ID proof",
+      "Medical slip for injuries",
+      "IMEI number of phone"
+    ]
+  }
+]

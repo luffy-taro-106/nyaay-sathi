@@ -1,0 +1,22 @@
+[project]
+name = "nyaay-sathi-backend"
+version = "0.1.0"
+description = "MVP backend for Nyaay Sathi legal navigator"
+readme = "../README.md"
+requires-python = ">=3.10"
+dependencies = [
+  "fastapi>=0.115.0",
+  "uvicorn>=0.30.0",
+  "python-dotenv>=1.0.0",
+  "pydantic>=2.8.0",
+  "reportlab>=4.0.0",
+  "livekit-api>=1.0.0",
+  "edge-tts>=6.1.12",
+]
+
+[build-system]
+requires = ["setuptools>=68.0"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+packages = ["app", "app.routes", "app.services", "app.models"]

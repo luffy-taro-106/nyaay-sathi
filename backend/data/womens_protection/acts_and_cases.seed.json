@@ -1,0 +1,118 @@
+[
+  {
+    "title": "Protection of Women from Domestic Violence Act, 2005",
+    "section": "Section 3",
+    "snippet": "Domestic violence includes physical, sexual, verbal, emotional, and economic abuse in a shared household; aggrieved persons can seek reliefs under the Act."
+  },
+  {
+    "title": "Protection of Women from Domestic Violence Act, 2005",
+    "section": "Sections 18–22",
+    "snippet": "Magistrates may pass protection, residence, monetary relief, custody, and compensation orders; breach of protection orders is punishable."
+  },
+  {
+    "title": "Protection of Women from Domestic Violence Act, 2005",
+    "section": "Section 12",
+    "snippet": "An application can be filed before the Magistrate by the aggrieved person or a protection officer; interim and ex parte orders are available in urgent situations."
+  },
+  {
+    "title": "Sexual Harassment of Women at Workplace (Prevention, Prohibition and Redressal) Act, 2013",
+    "section": "Sections 4–11",
+    "snippet": "Employers must constitute an Internal Committee and display the penal consequences of sexual harassment; inquiries must be completed within a time-bound manner with confidentiality."
+  },
+  {
+    "title": "Sexual Harassment of Women at Workplace (Prevention, Prohibition and Redressal) Act, 2013",
+    "section": "Sections 13–14",
+    "snippet": "During inquiry the ICC may recommend transfer, leave, or restraint on the respondent; malicious false complaints may attract action as prescribed."
+  },
+  {
+    "title": "Dowry Prohibition Act, 1961",
+    "section": "Sections 3–4",
+    "snippet": "Giving, taking, or abetting dowry is an offence; demanding dowry directly or indirectly is punishable with imprisonment and fine."
+  },
+  {
+    "title": "Indian Penal Code, 1860",
+    "section": "Section 498A (cruelty)",
+    "snippet": "Cruelty or harassment of a woman by her husband or relatives for dowry or otherwise is a cognizable offence; FIR can be registered on credible information."
+  },
+  {
+    "title": "Indian Penal Code, 1860",
+    "section": "Sections 354, 354A–D",
+    "snippet": "Assault or criminal force to outrage modesty, sexual harassment, stalking, and voyeurism are specific offences with punishments; police investigate as per procedure."
+  },
+  {
+    "title": "Indian Penal Code, 1860",
+    "section": "Sections 375–376 (rape)",
+    "snippet": "Rape and aggravated rape are serious offences with stringent punishment; medical examination, consent, and survivor rights follow BNSS and allied rules."
+  },
+  {
+    "title": "Scheduled Castes and Scheduled Tribes (Prevention of Atrocities) Act, 1989",
+    "section": "Sections 3–4",
+    "snippet": "Offences against SC/ST women including atrocities and humiliation attract special procedures, mandatory registration, and fast-track trial provisions."
+  },
+  {
+    "title": "Prohibition of Child Marriage Act, 2006",
+    "section": "Sections 3, 13",
+    "snippet": "Child marriages are voidable; child marriage prohibition officers and courts can issue injunctions; adult males contracting child marriage commit an offence."
+  },
+  {
+    "title": "Indecent Representation of Women (Prohibition) Act, 1986",
+    "section": "Section 4",
+    "snippet": "Advertisement or publication that indecently depicts women in violation of the Act is prohibited and punishable."
+  },
+  {
+    "title": "Medical Termination of Pregnancy Act, 1971",
+    "section": "Consented termination",
+    "snippet": "Termination within prescribed gestational limits and conditions must be by registered medical practitioners at approved facilities; beyond limits special boards apply under amended law."
+  },
+  {
+    "title": "Family Courts Act, 1984",
+    "section": "Maintenance, custody",
+    "snippet": "Family Courts hear matrimonial disputes, maintenance, and custody with a duty to assist settlement; procedures are simpler and child welfare is paramount in custody matters."
+  },
+  {
+    "entry_type": "illustrative_case",
+    "title": "Anonymized PWDVA protection · Pune district",
+    "section": "Illustrative outcome: interim protection and residence order",
+    "snippet": "Anonymized legal-aid style notes from Pune district: a woman filed under the Domestic Violence Act with medical papers, a short incident diary, and two witnesses; the Magistrate passed interim protection and residence orders and listed counselling. This is a training pattern, not a cited judgment.",
+    "district": "Pune",
+    "state": "Maharashtra",
+    "outcome": "won",
+    "forum_visited": "Judicial Magistrate (PWDVA proceedings)",
+    "documents_used": [
+      "ID proof",
+      "Marriage certificate or proof of relationship",
+      "Medical record after incident",
+      "List of dates of incidents",
+      "Witness affidavits (drafted with help)"
+    ]
+  },
+  {
+    "entry_type": "illustrative_case",
+    "title": "Anonymized PWDVA application · Pune district",
+    "section": "Illustrative outcome: limited relief (evidence gaps)",
+    "snippet": "Anonymized pattern from Pune district: an application was filed months after leaving the shared household with almost no documentary proof and reluctant witnesses; interim orders were narrow and enforcement was difficult. Early documentation and local support help. Illustrative only.",
+    "district": "Pune",
+    "state": "Maharashtra",
+    "outcome": "lost",
+    "forum_visited": "Magistrate court (same district)",
+    "documents_used": [
+      "Oral statement",
+      "Few informal messages"
+    ]
+  },
+  {
+    "entry_type": "illustrative_case",
+    "title": "Anonymized POSH inquiry · Chennai district",
+    "section": "Illustrative outcome: employer action on IC recommendations",
+    "snippet": "Anonymized outreach example in Chennai: an employee submitted a written complaint to the Internal Committee with email trails; the IC inquired and recommended shifting the respondent and counselling; implementation varied by employer. Not a published case; every workplace differs.",
+    "district": "Chennai",
+    "state": "Tamil Nadu",
+    "outcome": "settled",
+    "forum_visited": "Internal Committee under POSH",
+    "documents_used": [
+      "Written complaint",
+      "Emails and meeting notes",
+      "Call recordings where lawful"
+    ]
+  }
+]

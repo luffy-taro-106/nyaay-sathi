@@ -1,0 +1,45 @@
+services:
+  backend:
+    build:
+      context: .
+      dockerfile: backend/Dockerfile
+    image: nyaay-sathi-backend
+    ports:
+      - "8000:8000"
+    environment:
+      LLM_PROVIDER: ${LLM_PROVIDER:-ollama}
+      OLLAMA_API_URL: ${OLLAMA_API_URL:-http://host.docker.internal:11434/api/generate}
+      OLLAMA_MODEL: ${OLLAMA_MODEL:-qwen2.5:1.5b}
+      ANTHROPIC_API_KEY: ${ANTHROPIC_API_KEY:-}
+      ANTHROPIC_CHEAP_MODEL: ${ANTHROPIC_CHEAP_MODEL:-claude-3-5-haiku-latest}
+      LIVEKIT_URL: ${LIVEKIT_URL:-}
+      LIVEKIT_API_KEY: ${LIVEKIT_API_KEY:-}
+      LIVEKIT_API_SECRET: ${LIVEKIT_API_SECRET:-}
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+
+  frontend:
+    build:
+      context: .
+      dockerfile: frontend/Dockerfile
+    image: nyaay-sathi-frontend
+    ports:
+      - "3000:3000"
+    depends_on:
+      - backend
+
+  voice:
+    build:
+      context: .
+      dockerfile: voice/Dockerfile
+    image: nyaay-sathi-voice
+    environment:
+      ORCHESTRATOR_URL: http://backend:8000/v1/orchestrate
+      DEFAULT_LANGUAGE: ${DEFAULT_LANGUAGE:-en}
+      DEFAULT_DISTRICT: ${DEFAULT_DISTRICT:-Pune}
+      LIVEKIT_URL: ${LIVEKIT_URL:-}
+      LIVEKIT_API_KEY: ${LIVEKIT_API_KEY:-}
+      LIVEKIT_API_SECRET: ${LIVEKIT_API_SECRET:-}
+      OPENAI_API_KEY: ${OPENAI_API_KEY:-}
+    depends_on:
+      - backend

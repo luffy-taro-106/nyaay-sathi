@@ -1,0 +1,112 @@
+[
+  {
+    "title": "Transfer of Property Act, 1882",
+    "section": "Section 105 (lease)",
+    "snippet": "A lease creates a right to enjoy immovable property for a term in consideration of price paid; lessor and lessee rights and liabilities are governed by the lease deed and the Act."
+  },
+  {
+    "title": "Transfer of Property Act, 1882",
+    "section": "Section 106",
+    "snippet": "In the absence of contract or local usage, leases for agriculture or non-agriculture purposes terminate only by notice of specified duration; wrongful termination may be challenged in civil court."
+  },
+  {
+    "title": "Transfer of Property Act, 1882",
+    "section": "Section 108",
+    "snippet": "The lessor must give quiet enjoyment; the lessee must pay rent, maintain the property, and not commit waste; breach can lead to forfeiture or suit for possession and arrears."
+  },
+  {
+    "title": "Registration Act, 1908",
+    "section": "Sections 17–18",
+    "snippet": "Documents such as leases above certain terms and sale deeds generally require registration; unregistered documents may not confer enforceable rights in many situations."
+  },
+  {
+    "title": "Indian Contract Act, 1872",
+    "section": "Sections 62–67 (novation, breach)",
+    "snippet": "Rent agreements are contracts; breach, forfeiture clauses, and deposit disputes are decided on contract terms read with rent-control and transfer laws."
+  },
+  {
+    "title": "Real Estate (Regulation and Development) Act, 2016",
+    "section": "Sections 11–18",
+    "snippet": "Promoters must register projects, disclose sanctioned plans, and adhere to timelines; allottees may seek refund, interest, or compensation for delay or misrepresentation before the Authority or Adjudicating Officer."
+  },
+  {
+    "title": "Real Estate (Regulation and Development) Act, 2016",
+    "section": "Section 88 (offences)",
+    "snippet": "Willful failure to comply with RERA orders or fraudulent practices attracts penalties and imprisonment as specified; complaints can be filed with the Regulatory Authority."
+  },
+  {
+    "title": "Model Tenancy Act, 2021 (State adoption)",
+    "section": "Security deposit, rent revision",
+    "snippet": "Where States adopt model provisions, security deposit caps, rent revision rules, and eviction grounds are codified; actual rights depend on the State tenancy law in force."
+  },
+  {
+    "title": "State Rent Control / Tenancy statutes",
+    "section": "Eviction, fair rent, deposit",
+    "snippet": "Many States have Rent Acts protecting tenants from arbitrary eviction and regulating deposit and increase; eviction usually requires notice and often only on specified grounds before a court or rent tribunal."
+  },
+  {
+    "title": "Specific Relief Act, 1963",
+    "section": "Possession, injunction",
+    "snippet": "Parties may seek possession or permanent and mandatory injunctions in property disputes; courts balance hardship and conduct of parties when granting relief."
+  },
+  {
+    "title": "Indian Easements Act, 1882",
+    "section": "Light, air, access",
+    "snippet": "Rights of way and easements can arise by grant or prescription; obstruction may be remedied by injunction or declaration in civil suits."
+  },
+  {
+    "title": "Land Revenue / Mutation rules (State)",
+    "section": "Record of rights",
+    "snippet": "Mutation and khata entries are updated through revenue authorities; disputes on title or boundary may require civil suits or revenue tribunals depending on State law."
+  },
+  {
+    "title": "Consumer Protection Act, 2019 (housing services)",
+    "section": "Deficiency in housing service",
+    "snippet": "Flat buyers may file consumer complaints against builders for delay, defective construction, or unfair trade practice where jurisdiction and pecuniary limits are met."
+  },
+  {
+    "entry_type": "illustrative_case",
+    "title": "Anonymized tenant defence · Pune district",
+    "section": "Illustrative outcome: eviction suit resisted with registered lease",
+    "snippet": "Anonymized pattern from Pune area: a tenant produced a registered lease, rent receipts, and proof of timely NEFT transfers; when the landlord rushed an eviction notice without stated grounds under the rent law, the tenant filed before the civil court and obtained status-quo during pendency. Outcomes depend on facts; illustrative note only.",
+    "district": "Pune",
+    "state": "Maharashtra",
+    "outcome": "won",
+    "forum_visited": "Civil court (tenancy / possession suit)",
+    "documents_used": [
+      "Registered rent agreement",
+      "Bank receipts or rent receipts",
+      "Notices received from landlord",
+      "ID proof"
+    ]
+  },
+  {
+    "entry_type": "illustrative_case",
+    "title": "Anonymized deposit dispute · Pune district",
+    "section": "Illustrative outcome: deposit largely forfeited (weak paperwork)",
+    "snippet": "Anonymized pattern from Pune district: a flatmate left after an informal WhatsApp deal, paid deposit in cash without receipt, and could not show a clear termination date; the owner deducted most of the deposit for alleged damages and the tenant recovered little in negotiation. Written terms and traceable payments matter. Not a judgment.",
+    "district": "Pune",
+    "state": "Maharashtra",
+    "outcome": "lost",
+    "forum_visited": "Police mediation / informal negotiation (no suit filed)",
+    "documents_used": [
+      "Screenshots only",
+      "No signed inventory"
+    ]
+  },
+  {
+    "entry_type": "illustrative_case",
+    "title": "Anonymized RERA refund · Gurugram district",
+    "section": "Illustrative outcome: allottee received refund order",
+    "snippet": "Anonymized pattern from Gurugram: a buyer filed before H-RERA with builder-buyer agreement, demand letters, and delay logs; after show-cause the authority directed refund with interest for prolonged default. Another buyer who missed limitation steps faced hurdles. Illustrative pattern for learning only.",
+    "district": "Gurugram",
+    "state": "Haryana",
+    "outcome": "won",
+    "forum_visited": "State Real Estate Regulatory Authority",
+    "documents_used": [
+      "Builder-buyer agreement",
+      "Payment schedules and bank proofs",
+      "Possession delay correspondence"
+    ]
+  }
+]

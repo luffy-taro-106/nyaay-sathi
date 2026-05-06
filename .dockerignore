@@ -1,0 +1,9 @@
+.venv/
+**/__pycache__/
+**/node_modules/
+**/.next/
+graphify-out/cache/
+*.pyc
+.git/
+.cursor/
+.claude/

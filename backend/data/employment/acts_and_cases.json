@@ -1,0 +1,139 @@
+[
+  {
+    "title": "Code on Wages, 2019",
+    "section": "Section 3",
+    "snippet": "The appropriate Government may fix and revise minimum wages for time work, piece work, and guaranteed minimum wage for employees in scheduled employments."
+  },
+  {
+    "title": "Code on Wages, 2019",
+    "section": "Section 43–45 (claims)",
+    "snippet": "Employees or their legal representatives may apply to the authority for claims arising from unpaid or delayed wages, bonus, or other amounts due; the authority may order payment with interest after inquiry."
+  },
+  {
+    "title": "Payment of Wages Act, 1936",
+    "section": "Sections 4–8",
+    "snippet": "Wages must be paid on time without unauthorised deductions; limits apply to deductions for fines, absence, damage, or advances. Non-payment can be complained before the authority."
+  },
+  {
+    "title": "Payment of Bonus Act, 1965",
+    "section": "Sections 8–11",
+    "snippet": "Eligible employees in covered establishments have a right to statutory bonus computed on allocable surplus and salary ceilings; disputes go to labour authorities."
+  },
+  {
+    "title": "Employees' Provident Funds and Miscellaneous Provisions Act, 1952",
+    "section": "Sections 2, 7A",
+    "snippet": "EPF contributions are mandatory for covered establishments; employees can raise grievances on non-deposit of PF with the EPFO including assessment and recovery proceedings."
+  },
+  {
+    "title": "Payment of Gratuity Act, 1972",
+    "section": "Sections 4, 7",
+    "snippet": "Gratuity is payable on superannuation, resignation after five years, death, or disablement as per the formula in the Act; non-payment can be claimed before the Controlling Authority."
+  },
+  {
+    "title": "Industrial Disputes Act, 1947",
+    "section": "Sections 2A, 10, 25F",
+    "snippet": "Individual disputes on discharge, dismissal, or termination may be raised as industrial disputes; lay-off, retrenchment, and closure require notice, compensation, and often prior permission in larger establishments."
+  },
+  {
+    "title": "Industrial Employment (Standing Orders) Act, 1946",
+    "section": "Certified Standing Orders",
+    "snippet": "Certified standing orders govern classification, misconduct, suspension, and termination procedures in scheduled industrial establishments; breach can be agitated in labour forums."
+  },
+  {
+    "title": "Contract Labour (Regulation and Abolition) Act, 1970",
+    "section": "Sections 20–21",
+    "snippet": "Principal employers and contractors must pay wages to contract labour as prescribed; default can lead to liability of the principal employer and penalties."
+  },
+  {
+    "title": "Building and Other Construction Workers Act, 1996",
+    "section": "Welfare cess and benefits",
+    "snippet": "Registered construction workers may access welfare benefits from the Board; wage and safety violations can be pursued under labour and safety laws."
+  },
+  {
+    "title": "Mahatma Gandhi National Rural Employment Guarantee Act, 2005",
+    "section": "Sections 3, 13",
+    "snippet": "Households in rural areas have a right to at least 100 days of wage employment; delayed wages attract compensation under the scheme rules."
+  },
+  {
+    "title": "Sexual Harassment of Women at Workplace (Prevention, Prohibition and Redressal) Act, 2013",
+    "section": "Sections 4–11",
+    "snippet": "Employers must constitute an Internal Committee where ten or more workers are employed; complaints of workplace sexual harassment are inquired and recommendations include action and relief."
+  },
+  {
+    "title": "Maternity Benefit Act, 1961",
+    "section": "Sections 5, 11",
+    "snippet": "Women employees are entitled to maternity leave, medical bonus, and nursing breaks; dismissal or variation to disadvantage during pregnancy is prohibited except for prescribed reasons."
+  },
+  {
+    "title": "Minimum Wages Act, 1948 (where still applied)",
+    "section": "Scheduled employments",
+    "snippet": "State Governments notify minimum wages for scheduled employments; paying below the notified rate is an offence and workers can seek recovery through labour officers."
+  },
+  {
+    "title": "Equal Remuneration Act, 1976",
+    "section": "Sections 4–5",
+    "snippet": "Men and women must receive equal pay for the same work or work of a similar nature; discrimination can be complained to authorities appointed under the Act."
+  },
+  {
+    "entry_type": "illustrative_case",
+    "title": "Anonymized wage recovery pattern · Pune district",
+    "section": "Illustrative outcome: direction to pay unpaid wages",
+    "snippet": "From anonymized legal-literacy notes in Pune district: a shop-floor worker kept ID, appointment letter, salary slips, bank statements showing missed credits, and dated WhatsApp nudges to HR, approached the Assistant Labour Commissioner, and after conciliation and inquiry received a direction for several months of arrears with interest. Not a published judgment; your facts may differ.",
+    "district": "Pune",
+    "state": "Maharashtra",
+    "outcome": "won",
+    "forum_visited": "Office of the Assistant Labour Commissioner (Pune region)",
+    "documents_used": [
+      "Aadhaar",
+      "Company ID and appointment letter",
+      "Salary slips",
+      "Bank statement",
+      "Screenshots of messages to employer about unpaid months"
+    ]
+  },
+  {
+    "entry_type": "illustrative_case",
+    "title": "Anonymized wage claim pattern · Pune district",
+    "section": "Illustrative outcome: weak proof, limited relief",
+    "snippet": "From anonymized notes in Pune district: a daily-wage worker delayed approaching the office for more than a year, had no written employment proof, relied on verbal pay promises, and could not show attendance; the authority recorded the dispute but recovery was poor. Earlier steps and paperwork usually help. Illustrative only—not a court decision.",
+    "district": "Pune",
+    "state": "Maharashtra",
+    "outcome": "lost",
+    "forum_visited": "Labour office / conciliation (same region)",
+    "documents_used": [
+      "Informal UPI receipts",
+      "Partial bank statement"
+    ]
+  },
+  {
+    "entry_type": "illustrative_case",
+    "title": "Anonymized gratuity dispute · Mumbai district",
+    "section": "Illustrative outcome: payment after Controlling Authority application",
+    "snippet": "Anonymized pattern from Mumbai area: after resignation with five years of service, an employee filed before the Payment of Gratuity Controlling Authority with Form I, last payslips, and relieving letter; the employer paid after notice. Another worker without relieving proof faced longer delay. Patterns for discussion only.",
+    "district": "Mumbai",
+    "state": "Maharashtra",
+    "outcome": "won",
+    "forum_visited": "Controlling Authority under Payment of Gratuity Act",
+    "documents_used": [
+      "Resignation and acceptance emails",
+      "Last six months payslips",
+      "Form I",
+      "EPF passbook excerpts"
+    ]
+  },
+  {
+    "entry_type": "illustrative_case",
+    "title": "Anonymized PF grievance · Bengaluru Urban district",
+    "section": "Illustrative outcome: EPFO follow-up recovered dues",
+    "snippet": "Anonymized outreach example in Bengaluru Urban: an IT employee raised a non-deposit grievance on the EPFO portal with salary proofs and UAN statement; after field inquiry portions of dues were credited. A colleague who missed filing employer change forms had a slower path. Not a published order; facts vary.",
+    "district": "Bengaluru Urban",
+    "state": "Karnataka",
+    "outcome": "settled",
+    "forum_visited": "EPFO regional office / online grievance",
+    "documents_used": [
+      "UAN member passbook",
+      "Salary slips",
+      "Employer PF deduction line from payslips"
+    ]
+  }
+]

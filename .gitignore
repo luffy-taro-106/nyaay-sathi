@@ -1,0 +1,44 @@
+__pycache__/
+*.py[cod]
+.DS_Store
+backend/.venv/
+.venv/
+backend/data/chat.sqlite
+
+# Secrets (use .env.example templates only)
+backend/.env
+voice/.env
+*.pem
+
+# Node / Next.js
+frontend/node_modules/
+frontend/.next/
+npm-debug.log*
+*.tsbuildinfo
+
+# Python tooling
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+*.egg-info/
+dist/
+build/
+
+# graphify generated knowledge graph (regenerate locally)
+graphify-out/
+
+# IDE / agent scratch (not application code)
+.cursor/
+.claude/
+mcps/
+
+# Internal docs — keep README.md only for the public repo
+DEMO.md
+PROGRESS.md
+CLAUDE.md
+
+# Local run artifacts
+.backend.log
+.frontend.log
+.voice.log
+*.pid

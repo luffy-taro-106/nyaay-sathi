@@ -1,0 +1,111 @@
+[
+  {
+    "title": "Consumer Protection Act, 2019",
+    "section": "Section 2(7), 2(11)",
+    "snippet": "A consumer buys goods or hires services for consideration; deficiency means fault, imperfection, shortcoming, or inadequacy in quality, nature, or manner of performance."
+  },
+  {
+    "title": "Consumer Protection Act, 2019",
+    "section": "Section 2(47) (unfair trade practice)",
+    "snippet": "Unfair trade practice includes false representation, misleading advertisement, bargain sale bait, and offering prizes without intention—consumers may seek remedies and penalties may apply."
+  },
+  {
+    "title": "Consumer Protection Act, 2019",
+    "section": "Sections 34–38 (jurisdiction)",
+    "snippet": "District Commission, State Commission, and National Commission have pecuniary jurisdiction based on compensation claimed; complaints can be filed where opposite party resides or cause of action arises."
+  },
+  {
+    "title": "Consumer Protection Act, 2019",
+    "section": "Sections 69–72 (mediation)",
+    "snippet": "Commissions may refer disputes to mediation; settlement agreements have the status of Commission orders, encouraging faster resolution."
+  },
+  {
+    "title": "Consumer Protection Act, 2019",
+    "section": "Section 89 (product liability)",
+    "snippet": "Product liability action lies for harm caused by defective product against manufacturer, seller, or service provider subject to exceptions for misuse or altered product."
+  },
+  {
+    "title": "Consumer Protection (E-Commerce) Rules, 2020",
+    "section": "Duties of e-commerce entities",
+    "snippet": "Marketplaces must display seller details, grievance officer contacts, and refund timelines; misrepresentation or failure to honour cancellation rights can be actionable."
+  },
+  {
+    "title": "Legal Metrology Act, 2009",
+    "section": "Packaged commodities",
+    "snippet": "Pre-packed goods must declare net quantity, MRP, and manufacturer details; violations attract penalties and help consumers challenge short delivery or wrong labelling."
+  },
+  {
+    "title": "Bureau of Indian Standards Act, 2016",
+    "section": "Compulsory standards",
+    "snippet": "Certain goods require conformity to Indian Standards; sale of non-conforming or sub-standard goods can lead to recall, compensation claims, and prosecution."
+  },
+  {
+    "title": "Negotiable Instruments Act, 1881",
+    "section": "Section 138 (cheque dishonour)",
+    "snippet": "Dishonour of cheque for insufficiency of funds may lead to criminal complaint if statutory notice and conditions are complied with; civil recovery can also be pursued."
+  },
+  {
+    "title": "Information Technology Act, 2000",
+    "section": "Sections 66C, 66D, 43",
+    "snippet": "Identity theft, cheating by personation using computer resources, and unauthorised access or damage to data attract penalties; cyber fraud complaints can be filed with police and cyber cells."
+  },
+  {
+    "title": "Prize Chits and Money Circulation Schemes (Banning) Act, 1978",
+    "section": "Ban on money circulation",
+    "snippet": "Promoting or participating in banned money circulation schemes is an offence; victims of pyramid or chit fraud may report to police and consumer forums where applicable."
+  },
+  {
+    "title": "Food Safety and Standards Act, 2006",
+    "section": "Adulteration, misbranding",
+    "snippet": "Unsafe or misbranded food is regulated by FSSAI and State authorities; consumers can complain to the Food Safety Officer and seek damages in appropriate forums."
+  },
+  {
+    "title": "Insurance Regulatory and Development Authority of India (protection of policyholders)",
+    "section": "Grievance redress",
+    "snippet": "Insurance disputes follow insurer grievance cell, Ombudsman, and consumer forums depending on facts; mis-selling and claim rejection can be challenged with documentation."
+  },
+  {
+    "entry_type": "illustrative_case",
+    "title": "Anonymized e-commerce refund · Pune district",
+    "section": "Illustrative outcome: refund directed in commission",
+    "snippet": "Anonymized pattern from Pune district: a buyer filed in the District Consumer Commission with order invoice, delivery proof of defective phone, return pickup failure screenshots, and gateway dispute ID; after written arguments the forum directed refund with costs. Another buyer who missed the limitation period struggled. Training example only.",
+    "district": "Pune",
+    "state": "Maharashtra",
+    "outcome": "won",
+    "forum_visited": "District Consumer Disputes Redressal Commission",
+    "documents_used": [
+      "Invoice and payment proof",
+      "Product photos and unboxing video link",
+      "Return request and courier screenshots",
+      "Email to grievance officer"
+    ]
+  },
+  {
+    "entry_type": "illustrative_case",
+    "title": "Anonymized online purchase · Pune district",
+    "section": "Illustrative outcome: complaint dismissed on limitation",
+    "snippet": "Anonymized notes from Pune district: a user discovered a hidden defect after more than two years, had no extended warranty proof, and the commission held the complaint time-barred. Shorter delays and clear warranty terms help. Not a real citation.",
+    "district": "Pune",
+    "state": "Maharashtra",
+    "outcome": "lost",
+    "forum_visited": "District Consumer Commission",
+    "documents_used": [
+      "Old invoice only"
+    ]
+  },
+  {
+    "entry_type": "illustrative_case",
+    "title": "Anonymized cyber-fraud complaint · Hyderabad district",
+    "section": "Illustrative outcome: FIR and bank lien partial recovery",
+    "snippet": "Anonymized pattern in Hyderabad: a victim filed cybercrime portal complaint with transaction hashes and bank passbook, police registered FIR and contacted the nodal bank; part of the transfer was frozen in time. Delays in reporting often mean money is gone. Illustrative story.",
+    "district": "Hyderabad",
+    "state": "Telangana",
+    "outcome": "partial",
+    "forum_visited": "Police station / cyber cell with bank nodal coordination",
+    "documents_used": [
+      "Bank statement with fraudulent debit",
+      "Screenshots of phishing page",
+      "Cybercrime portal acknowledgement"
+    ]
+  }
+]
