@@ -1,45 +1,99 @@
-# Nyaay Sathi (MVP Scaffold)
+# Nyaay Sathi - Claude-first Legal Navigator
 
-Voice-first, multilingual legal navigator for India.
+![Claude](https://img.shields.io/badge/AI-Anthropic%20Claude-111111)
+![FastAPI](https://img.shields.io/badge/API-FastAPI-009688)
+![Next.js](https://img.shields.io/badge/UI-Next.js-000000)
+![LiveKit](https://img.shields.io/badge/Voice-LiveKit-0B5CFF)
 
-## Project overview
+Voice-first, multilingual legal navigator for India, designed with Anthropic Claude as the primary reasoning layer.
 
-Nyaay Sathi is built to solve a simple but critical gap: many people face legal problems, but do not know where to start, which office to approach, what documents to collect, or how to explain their case clearly.
+## Claude at the base
 
-The idea is **not** to replace lawyers or courts. The idea is to provide a calm, multilingual, first-step legal companion that turns confusion into an actionable path:
+Nyaay Sathi is structured around a Claude-backed legal reasoning workflow. The backend exposes a single orchestrator that can run with `LLM_PROVIDER=anthropic`, using Claude for classification, follow-up question planning, legal response composition, and structured JSON output.
 
-- Explain legal issues in plain language (instead of heavy legal jargon)
-- Ask smart follow-up questions to understand missing facts
-- Suggest likely forums (labour office, consumer forum, DLSA, police station, etc.)
-- List useful documents to prepare
-- Generate a complaint draft PDF that users can take forward
-- Detect crisis situations and prioritize immediate safety guidance
+The rest of the application is built around that Claude reasoning loop:
 
-In short, Nyaay Sathi helps people move from **\"I don't know what to do\"** to **\"I know my next step\"**, especially for common everyday issues like wages, tenancy, consumer fraud, women's protection, and FIR-related problems.
+- FastAPI orchestrator routes every legal query through one controlled intelligence layer
+- Claude handles intent understanding, missing-fact analysis, and plain-language response drafting
+- Source-gated local retrieval keeps Claude grounded in seeded legal references
+- Rule-based crisis detection short-circuits the model when immediate safety guidance is needed
+- Next.js dashboard shows model/provider visibility through `/v1/config`
+- LiveKit voice flow sends spoken user queries back into the same Claude-ready orchestrator
+- Complaint PDF generation turns the Claude-guided flow into an actionable draft
 
-This repository currently contains the first backend slice:
+Local Ollama support remains available for offline development and demos. The intended production path is Anthropic Claude.
 
-- Employment category seed data ingest pipeline
-- FastAPI orchestrator endpoint with:
-  - cheap-model LLM classification/composition (Ollama local model by default)
-  - rule-based local fallback when LLM/key is unavailable
-  - crisis detection (multilingual keywords + immediate short-circuit routing)
-  - clarifying-question loop (asks for missing facts before detailed guidance)
-  - legal response composition with source citations and source-gating
-  - `/v1/config` endpoint for active model/provider visibility
+## What it solves
+
+Many people face legal problems but do not know where to start, which office to approach, what documents to collect, or how to explain their case clearly.
+
+Nyaay Sathi does not replace lawyers or courts. It acts as a calm first-step companion that helps users move from "I do not know what to do" to "I know my next step", especially for everyday issues like wages, tenancy, consumer fraud, women's protection, and FIR-related problems.
+
+## Core capabilities
+
+- Multilingual legal intake for common Indian legal problems
+- Claude-ready legal issue classification and response composition
+- Smart clarifying-question loop before detailed guidance
+- Likely forum suggestions such as labour office, consumer forum, DLSA, police station, and related authorities
+- Document checklist generation for the user's situation
+- Complaint draft PDF generation
+- Crisis detection with immediate safety-first routing
+- Provider transparency through `/v1/config`
+
+## Architecture
+
+```text
+User query
+  -> Next.js UI or LiveKit voice agent
+  -> FastAPI /v1/orchestrate
+  -> Safety and crisis checks
+  -> Source retrieval and category rules
+  -> Claude JSON reasoning layer
+  -> Grounded legal guidance
+  -> Optional complaint PDF
+```
+
+## Recommended Claude setup
+
+Use Anthropic Claude as the main reasoning provider:
+
+```bash
+export LLM_PROVIDER="anthropic"
+export ANTHROPIC_API_KEY="your_anthropic_key"
+export ANTHROPIC_CHEAP_MODEL="claude-3-5-haiku-latest"
+```
+
+Confirm the backend is using Claude:
+
+```bash
+curl http://127.0.0.1:8000/v1/config
+```
+
+Expected shape:
+
+```json
+{
+  "llm_provider": "anthropic",
+  "llm_model": "claude-3-5-haiku-latest"
+}
+```
 
 ## Quick start
 
 1. Create and activate a virtual environment
 2. Install dependencies
-3. Run ingest
-4. Start API
+3. Configure Claude credentials
+4. Run ingest
+5. Start the API
 
 ```bash
 cd backend
 python3 -m venv .venv
 source .venv/bin/activate
 pip install -e .
+export LLM_PROVIDER="anthropic"
+export ANTHROPIC_API_KEY="your_anthropic_key"
+export ANTHROPIC_CHEAP_MODEL="claude-3-5-haiku-latest"
 python scripts/ingest_all_categories.py
 uvicorn app.main:app --reload --port 8000
 ```
@@ -53,11 +107,26 @@ npm run dev
 ```
 
 Open `http://127.0.0.1:3000` for:
-- Coverage map (honest live vs roadmap status)
-- Backend config check (`/v1/config`)
-- Orchestrator tester (`/v1/orchestrate`)
 
-## LiveKit voice agent
+- Coverage map with live vs roadmap status
+- Claude provider check through `/v1/config`
+- Orchestrator tester through `/v1/orchestrate`
+
+## Test the Claude-backed API
+
+```bash
+curl -X POST http://127.0.0.1:8000/v1/orchestrate \
+  -H "Content-Type: application/json" \
+  -d '{
+    "message": "My employer is not paying minimum wages for 3 months",
+    "language": "en",
+    "district": "Pune"
+  }'
+```
+
+The response includes `model_used` so Claude usage is visible in API output when Anthropic is configured.
+
+## Voice agent
 
 ```bash
 cd voice
@@ -65,7 +134,7 @@ pip install -r requirements.txt
 python livekit_agent.py dev
 ```
 
-This voice agent sends user utterances to backend `/v1/orchestrate` and speaks back legal guidance.
+The voice agent captures speech through LiveKit, sends user utterances to the backend `/v1/orchestrate` endpoint, and speaks back the legal guidance generated by the same Claude-ready orchestration layer.
 
 ## Complaint PDF generation
 
@@ -80,9 +149,11 @@ curl -X POST http://127.0.0.1:8000/v1/complaint-pdf \
   }'
 ```
 
-This returns a downloadable complaint draft PDF.
+This returns a downloadable complaint draft PDF based on the same legal guidance flow.
 
-Optional environment variables for cheap LLM mode (local Ollama default):
+## Local fallback mode
+
+For offline development without an Anthropic key, use the local Ollama path:
 
 ```bash
 export LLM_PROVIDER="ollama"
@@ -90,45 +161,21 @@ export OLLAMA_API_URL="http://127.0.0.1:11434/api/generate"
 export OLLAMA_MODEL="qwen2.5:1.5b"
 ```
 
-To switch to Anthropic for deployment:
+This is useful for local testing, but the main application story and recommended deployment target remain Claude.
 
-```bash
-export LLM_PROVIDER="anthropic"
-export ANTHROPIC_API_KEY="your_key_here"
-export ANTHROPIC_CHEAP_MODEL="claude-3-5-haiku-latest"
-```
+## Product mode
 
-## Test the API
-
-```bash
-curl -X POST http://127.0.0.1:8000/v1/orchestrate \
-  -H "Content-Type: application/json" \
-  -d '{
-    "message": "My employer is not paying minimum wages for 3 months",
-    "language": "en",
-    "district": "Pune"
-  }'
-```
-
-## Smoke tests
-
-```bash
-source .venv/bin/activate
-PYTHONPATH=backend python -m pytest backend/tests -q
-```
-
-## Product mode (end-user flow)
-
-Run the app as a final-user experience (voice + text + PDF):
+Run the app as a final-user experience with voice, text, and PDF:
 
 ```bash
 ./scripts/run_product.sh
 ```
 
 Then open `http://127.0.0.1:3000` and use:
-- **Start Voice Call** (auto token generation, no manual token steps)
-- **Get Legal Guidance** (text flow)
-- **Download Complaint PDF**
+
+- Start Voice Call
+- Get Legal Guidance
+- Download Complaint PDF
 
 To stop everything:
 
@@ -139,17 +186,26 @@ To stop everything:
 ## Docker deployment
 
 ```bash
+export LLM_PROVIDER="anthropic"
+export ANTHROPIC_API_KEY="your_anthropic_key"
+export ANTHROPIC_CHEAP_MODEL="claude-3-5-haiku-latest"
 docker compose up --build
 ```
 
-Brings up backend (port 8000), frontend (port 3000), and the LiveKit voice worker. Reads LLM and LiveKit credentials from your shell env (or a `.env` next to the compose file).
+This brings up the backend on port `8000`, frontend on port `3000`, and the LiveKit voice worker. LLM and LiveKit credentials are read from your shell environment or a `.env` next to the compose file.
 
-## Demo script
+## Smoke tests
 
-See [`DEMO.md`](DEMO.md) for the 5-minute live demo plan with 5 ready-made prompts, expected outputs, and a crisis short-circuit demo.
+```bash
+cd backend
+source .venv/bin/activate
+PYTHONPATH=. python -m pytest tests -q
+```
 
 ## Current limits
 
-- Voice agent requires LiveKit credentials and OpenAI key to connect.
-- RAG is local JSON retrieval (Qdrant integration next).
-- PDF uses Arial Unicode / DejaVuSans when available for Indic scripts; falls back to Helvetica otherwise.
+- Claude requires `ANTHROPIC_API_KEY` and `LLM_PROVIDER=anthropic`.
+- Voice transport requires LiveKit credentials.
+- Voice speech plumbing currently uses LiveKit OpenAI plugins for STT/TTS, while legal reasoning still routes through the backend orchestrator.
+- RAG is local JSON retrieval. Qdrant integration is planned next.
+- PDF uses Arial Unicode or DejaVuSans when available for Indic scripts, and falls back to Helvetica otherwise.
